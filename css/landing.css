@@ -58,6 +58,31 @@ header a {
 header a:first-of-type {
   font-size: 25px;
 }
+header #colors {
+  display: flex;
+  justify-content: space-around;
+  width: 80px;
+  height: 15px;
+}
+header #colors #color1,
+header #colors #color2,
+header #colors #color3,
+header #colors #color4 {
+  border-radius: 100%;
+  background-color: #8a2be2;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+header #colors #color2 {
+  background-color: #01c4ff;
+}
+header #colors #color3 {
+  background-color: #e22b2b;
+}
+header #colors #color4 {
+  background-color: #f5deb3;
+}
 /* --------------------------------------------------------------Header - End */
 /* --------------------------------------------------------------Landing - Start */
 .landing {
@@ -132,8 +157,15 @@ header a:first-of-type {
   justify-content: center;
   justify-items: center;
 }
+.bot-cont ul li::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: var(--Fourth-Color);
+  opacity: 0.2;
+}
 .bot-cont ul li {
-  background-color: rgba(245, 222, 179, 0.5);
   width: 200px;
   height: 200px;
   display: flex;
@@ -145,6 +177,7 @@ header a:first-of-type {
   position: relative;
   cursor: pointer;
   border-radius: 5px;
+  z-index: 1;
 }
 .bot-cont ul li::after {
   content: "";

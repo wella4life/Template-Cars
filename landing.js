@@ -545,3 +545,28 @@ function close_tesla() {
   }
 }
 //////////////////////////////////////////////////////////////// Tesla
+function change_blue() {
+  main = document.documentElement.style.getPropertyValue("--Fourth-Color");
+  if (main != "#8a2be2") {
+    document.documentElement.style.setProperty("--Fourth-Color", "#8a2be2");
+  }
+}
+function change_cyan() {
+  main = document.documentElement.style.getPropertyValue("--Fourth-Color");
+  if (main != "#01c4ff") {
+    document.documentElement.style.setProperty("--Fourth-Color", "#01c4ff");
+  }
+}
+function change_red() {
+  main = document.documentElement.style.getPropertyValue("--Fourth-Color");
+  if (main != "#e22b2b") {
+    document.documentElement.style.setProperty("--Fourth-Color", "#e22b2b");
+  }
+}
+function change_wheat() {
+  main = document.documentElement.style.getPropertyValue("--Fourth-Color");
+  if (main != "#f5deb3") {
+    document.documentElement.style.setProperty("--Fourth-Color", "#f5deb3");
+  }
+}
+//////////////////////////////////////////////////////////////// Color Change
