@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars Template</title>
+    <!-- Render Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/landing.css" />
+    <!-- Awesome Font Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <script
+      src="https://kit.fontawesome.com/87fdc1a03d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="c" class="container">
+      <header class="header" id="myHeader">
+        <img src="images/logo.png" alt="" />
+        <a href="#vid">Home</a>
+        <a href="#top-cars">Top 10 Car Brands</a>
+        <a href="#myInput">Search</a>
+      </header>
+    </div>
+    <div id="c1" class="container">
+      <div class="landing">
+        <video
+          autoplay
+          src="images/Landing-Video.mp4"
+          controls
+          preload=""
+          id="vid"
+          alt="images/se-image-3bbeac5006e9b894545a3519cc23a735.jpg"
+        ></video>
+        <img src="images/logo.png" alt="" />
+        <script>
+          document.getElementById("vid").play();
+        </script>
+      </div>
+    </div>
+    <div id="c2" class="container">
+      <div class="about-us">
+        <img src="images/give key.jpg" alt="" />
+        <div class="rabus">
+          <h1>We Will Search for You</h1>
+          <p>
+            The top five activities conducted online by car shoppers include
+            researching car prices <span>71%</span> finding actual cars listed
+            for sale <span>68%</span> comparing different models
+            <span>64%</span> finding out what current car is worth
+            <span>63%</span> and locating a dealer or getting dealer info
+            <span>46%</span>
+            <span>All Done Right Here</span>
+          </p>
+        </div>
+      </div>
+      <div class="about-us-2">
+        <div class="labus">
+          <h1>We Can Guarantee Your Safety</h1>
+          <p>
+            Furthermore <span>87%</span> of Americans dislike something about
+            car shopping at dealerships and <span>61%</span> feel they're taken
+            advantage of while there <span>And</span> When asked about newer car
+            buying alternatives <span>54%</span> said they would
+            <span>love</span> being able to sell or buy a car from home and
+            <span>42%</span> were fine buying a car without a test drive, as
+            long as there was some form of guarantee and
+            <span>Here Is Where We Come In</span>
+          </p>
+        </div>
+        <img src="images/insurance.jpg" alt="" />
+      </div>
+      <div class="top-cont">
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="Search for Car Brands...."
+        />
+      </div>
+      <div class="bot-cont" id="top-cars">
+        <ul id="myUL">
+          <li class="toyota" onclick="show_toyota()">
+            <img src="images/Toyota.png" alt="" /><a href="">Toyota</a>
+          </li>
+          <li class="volkswagen" onclick="show_volkswagen()">
+            <img src="images/Volkswagen.png" alt="" /><a href="">Volkswagen</a>
+          </li>
+          <li class="mercedes" onclick="show_mercedes()">
+            <img src="images/Mercedes.png" alt="" /><a href="">Mercedes</a>
+          </li>
+          <li class="ford" onclick="show_ford()">
+            <img src="images/Ford.png" alt="" /><a href="">Ford</a>
+          </li>
+          <li class="honda" onclick="show_honda()">
+            <img src="images/Honda.png" alt="" /><a href="">Honda</a>
+          </li>
+          <li class="general-motors" onclick="show_general_motors()">
+            <img src="images/GM.png" alt="" /><a href="">General-Motors</a>
+          </li>
+          <li class="bmw" onclick="show_BMW()">
+            <img src="images/BMW.png" alt="" /><a href="">BMW</a>
+          </li>
+          <li class="hyundai" onclick="show_hyundai()">
+            <img src="images/Hyundai.png" alt="" /><a href="">Hyundai</a>
+          </li>
+          <li class="nissan" onclick="show_nissan()">
+            <img src="images/Nissan.png" alt="" /><a href="">Nissan</a>
+          </li>
+          <li class="tesla" onclick="show_tesla()">
+            <img src="images/Tesla.png" alt="" /><a href="">Tesla</a>
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <img src="images/logo.png" alt="" />
+        <p>Copyright &copy; Cars, Inc.</p>
+        <div class="contacts">
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+      </footer>
+    </div>
+    <div id="pop-up-t" class="pop-up">
+      <i onclick="close_toyota()" class="fa-solid fa-xmark"></i>
+      <video
+        src="images/Toyota.mp4"
+        id="brand-video"
+        controls
+        muted
+        autoplay
+      ></video>
+      <div class="desc">
+        <h3>Brand Overview</h3>
+        <h4>Founded:<span> 1937</span></h4>
+        <h4>Founder:<span> Kiichiro Toyoda</span></h4>
+        <h4>Headquarters:<span> Toyota City, Japan</span></h4>
+        <h4>
+          Official Site:
+          <span class="links" onclick="location='https://www.toyota.com'"
+            >www.toyota.com</span
+          >
+        </h4>
+        Toyota Motor Corporation is a Japanese multinational automotive
+        manufacturer headquartered in Toyota, Aichi, Japan. As of December 2019,
+        was the tenth-largest company in the world by revenue. Toyota is the
+        second largest automobile manufacturer in the world, behind Volkswagen,
+        based on 2018 unit sales. Toyota is the global market leader in sales of
+        hybrid electric vehicles, and one of the largest companies to encourage
+        the mass-market adoption of hybrid vehicles across the globe. Toyota
+        Motor Corporation produces vehicles under five brands, including the
+        Toyota brand, Hino, Lexus, Ranz, and Daihatsu.
+      </div>
+      <a href="toyota.html">more..</a>
+    </div>
+    <div id="pop-up-w" class="pop-up">
+      <i onclick="close_volkswagen()" class="fa-solid fa-xmark"></i>
+      <video
+        src="images/Volkswagen.mp4"
+        id="brand-video"
+        controls
+        muted
+        autoplay
+      ></video>
+      <div class="desc">
+        <h3>Brand Overview</h3>
+        <h4>Founded:<span> 1937</span></h4>
+        <h4>Founder:<span> German Labour Front (DAF) "Adolf Hitler"</span></h4>
+        <h4>Headquarters:<span> Wolfsburg, Germany</span></h4>
+        <h4>
+          Official Site:
+          <span class="links" onclick="location='https://www.volkswagen.com'"
+            >www.volkswagen.com</span
+          >
+        </h4>
+        <h4>
+          Parent:<span>
+            Volkswagen Group (Subsidiaries): Audi, Bentley Motors, Bugatti
+            Automobiles, Lamborghini, MAN SE, Porsche SEAT, Škoda Auto</span
+          >
+        </h4>
+        Volkswagen, shortened to VW, is a German automaker founded on 28 May
+        1937 by the German Labour Front under Adolf Hitler and headquartered in
+        Wolfsburg. It is the flagship marque of the Volkswagen Group, the
+        largest automaker by worldwide sales in 2016.
+      </div>
+      <a href="volkswagen.html">more..</a>
+    </div>
+    <div id="pop-up-m" class="pop-up">
+      <i onclick="close_mercedes()" class="fa-solid fa-xmark"></i>
+      <video
+        src="images/Mercedes.mp4"
+        id="brand-video"
+        controls
+        muted
+        autoplay
+      ></video>
+      <div class="desc">
+        <h3>Brand Overview</h3>
+        <h4>Founded:<span> 1886</span></h4>
+        <h4>Founder:<span> Gottlieb Daimler</span></h4>
+        <h4>Headquarters:<span> Stuttgart, Germany</span></h4>
+        <h4>
+          Official Site:
+          <span class="links" onclick="location='https://www.daimler.com'"
+            >www.daimler.com</span
+          >
+        </h4>
+        Daimler AG is a German multinational automotive corporation. Daimler AG
+        is headquartered in Stuttgart, Baden-Württemberg, Germany. As of 2014,
+        Daimler owned or had shares in a number of car, bus, truck and
+        motorcycle brands including Mercedes-Benz, Mercedes-AMG, Smart
+        Automobile, Detroit Diesel, Freightliner, Western Star, Thomas Built
+        Buses, Setra, BharatBenz, Mitsubishi Fuso, MV Agusta as well as shares
+        in Denza, KAMAZ and Beijing Automotive Group. The luxury Maybach brand
+        was terminated at the end of 2012, but revived in April 2015 as
+        "Mercedes-Maybach" versions of the Mercedes-Benz S-Class and G-Class.
+      </div>
+      <a href="mercedes.html">more..</a>
+    </div>
+    <div id="pop-up-f" class="pop-up">
+      <i onclick="close_ford()" class="fa-solid fa-xmark"></i>
+      <video
+        src="images/Ford.mp4"
+        id="brand-video"
+        controls
+        muted
+        autoplay
+      ></video>
+      <div class="desc">
+        <h3>Brand Overview</h3>
+        <h4>Founded:<span> 1903</span></h4>
+        <h4>Founder:<span> Henry Ford</span></h4>
+        <h4>Headquarters:<span> Dearborn, Michigan, U.S.</span></h4>
+        <h4>
+          Official Site:
+          <span class="links" onclick="location='https://www.ford.com'"
+            >www.ford.com</span
+          >
+        </h4>
+        The Ford Motor Company (commonly referred to simply as "Ford") is an
+        American multinational automaker headquartered in Dearborn, Michigan, a
+        suburb of Detroit. The company sells automobiles and commercial vehicles
+        under the Ford brand, and most luxury cars under the Lincoln brand. Ford
+        also owns Brazilian SUV manufacturer Troller, an 8% stake in Aston
+        Martin of the United Kingdom and a 32% stake in Jiangling Motors. As of
+        2019, Ford Motor Company is the largest American car manufacturer, and
+        one of the world's largest.
+      </div>
+      <a href="ford.html">more..</a>
+    </div>
+    <div id="pop-up-h" class="pop-up">
+      <i onclick="close_honda()" class="fa-solid fa-xmark"></i>
+      <video
+        src="images/Honda.mp4"
+        id="brand-video"
+        controls
+        muted
+        autoplay
+      ></video>
+      <div class="desc">
+        <h3>Brand Overview</h3>
+        <h4>Founded:<span> 1948</span></h4>
+        <h4>Founder:<span> Soichiro Honda, Takeo Fujisawa</span></h4>
+        <h4>Headquarters:<span> Minato, Tokyo, Japan</span></h4>
+        <h4>
+          Official Site:
+          <span class="links" onclick="location='https://global.honda'"
+            >global.honda</span
+          >
+        </h4>
+        Honda became the second-largest Japanese automobile manufacturer in
+        2001. Honda was the sixth largest automobile manufacturer in the world
+        in 2019. Honda was the first Japanese automobile manufacturer to release
+        a dedicated luxury car brand, Acura, in 1986.
+      </div>
+      <a href="honda.html">more..</a>
+    </div>
+    <div id="pop-up-gm" class="pop-up">
+      <i onclick="close_general_motors()" class="fa-solid fa-xmark"></i>
+      <video
+        src="images/GM.mp4"
+        id="brand-video"
+        controls
+        muted
+        autoplay
+      ></video>
+      <div class="desc">
+        <h3>Brand Overview</h3>
+        <h4>Founded:<span> 1908</span></h4>
+        <h4>Founder:<span> William C. Durant & Charles Stewart Mott</span></h4>
+        <h4>Headquarters:<span> Detroit, Michigan, United States</span></h4>
+        <h4>
+          Official Site:
+          <span class="links" onclick="location='https://www.gm.com'"
+            >www.gm.com</span
+          >
+        </h4>
+        General Motors Company ( GM ) is an American multinational corporation
+        headquartered in Detroit, Michigan, that designs, manufactures, markets,
+        and distributes vehicles and vehicle parts, and sells financial
+        services. The current company, General Motors Company LLC ("new GM"),
+        was formed in 2009 as a part of its 2009 bankruptcy restructuring, after
+        the bankruptcy of General Motors Corporation ("old GM"). The new company
+        purchased the majority of the assets of "old GM", including the name
+        "General Motors".
+      </div>
+      <a href="gm.html">more..</a>
+    </div>
+    <div id="pop-up-bmw" class="pop-up">
+      <i onclick="close_BMW()" class="fa-solid fa-xmark"></i>
+      <video
+        src="images/BMW.mp4"
+        id="brand-video"
+        controls
+        muted
+        autoplay
+      ></video>
+      <div class="desc">
+        <h3>Brand Overview</h3>
+        <h4>Founded:<span> 1916</span></h4>
+        <h4>
+          Founder:<span>
+            Karl Rapp / Camillo Castiglioni / Franz Josef Popp</span
+          >
+        </h4>
+        <h4>Headquarters:<span> Munich, Germany</span></h4>
+        <h4>
+          Official Site:
+          <span class="links" onclick="location='https://www.bmw.com'"
+            >www.bmw.com</span
+          >
+        </h4>
+        BMW (The name BMW is an abbreviation for Bayerische Motoren Werke) is a
+        German automobile company founded in 1916, it also owns and produces
+        Mini cars and Rolls-Royce Motor Cars. BMW is one of the three
+        best-selling luxury automakers in the world, along with Mercedes-Benz
+        and Audi. The terms Beemer, Bimmer and Bee-em are sometimes used as
+        slang for BMW in the English language and are sometimes used
+        interchangeably for cars and motorcycles.
+      </div>
+      <a href="bmw.html">more..</a>
+    </div>
+    <div id="pop-up-hy" class="pop-up">
+      <i onclick="close_hyundai()" class="fa-solid fa-xmark"></i>
+      <video
+        src="images/Hyundai.mp4"
+        id="brand-video"
+        controls
+        muted
+        autoplay
+      ></video>
+      <div class="desc">
+        <h3>Brand Overview</h3>
+        <h4>Founded:<span> 1967</span></h4>
+        <h4>Founder:<span> Chung Ju-yung</span></h4>
+        <h4>Headquarters:<span> Seoul, South Korea</span></h4>
+        <h4>
+          Official Site:
+          <span
+            class="links"
+            onclick="location='https://www.hyundai.com/worldwide/en'"
+            >www.hyundai.com/worldwide/en</span
+          >
+        </h4>
+        The Hyundai Motor Company, a division of the Hyundai Kia Automotive
+        Group, is South Korea's largest car maker. It is also the world's
+        seventh largest car maker and operates the world's largest integrated
+        automobile manufacturing facility in Ulsan, South Korea. The company was
+        founded in 1967 and, along with its 32.8% owned subsidiary, Kia Motors,
+        and its 100% owned luxury subsidiary Genesis Motors which together
+        comprise the Hyundai Motor Group.
+      </div>
+      <a href="hyundai.html">more..</a>
+    </div>
+    <div id="pop-up-n" class="pop-up">
+      <i onclick="close_nissan()" class="fa-solid fa-xmark"></i>
+      <video
+        src="images/Nissan.mp4"
+        id="brand-video"
+        controls
+        muted
+        autoplay
+      ></video>
+      <div class="desc">
+        <h3>Brand Overview</h3>
+        <h4>Founded:<span> 1933</span></h4>
+        <h4>Founder:<span> Masujiro Hashimoto, Yoshisuke Aikawa</span></h4>
+        <h4>Headquarters:<span> Nishi-ku, Yokohama, Japan</span></h4>
+        <h4>
+          Official Site:
+          <span class="links" onclick="location='https://www.nissan-global.com'"
+            >www.nissan-global.com</span
+          >
+        </h4>
+        Nissan Motor Company Ltd (often shortened to Nissan), is a Japanese
+        multinational automobile manufacturer headquartered in Nishi-ku,
+        Yokohama. The company sells its cars under the Nissan, Infiniti, and
+        Datsun brands with in-house performance tuning products labelled Nismo.
+        The name 'Nissan' originated during the 1930s as an abbreviation used on
+        the Tokyo Stock Exchange for Nihon Sangyo.
+      </div>
+      <a href="nissan.html">more..</a>
+    </div>
+    <div id="pop-up-ts" class="pop-up">
+      <i onclick="close_tesla()" class="fa-solid fa-xmark"></i>
+      <video
+        src="images/Tesla.mp4"
+        id="brand-video"
+        controls
+        muted
+        autoplay
+      ></video>
+      <div class="desc">
+        <h3>Brand Overview</h3>
+        <h4>Founded:<span> 2003</span></h4>
+        <h4>
+          Founder:<span>
+            Elon Musk / J. B. Straubel / Martin Eberhard / Marc Tarpenning / Ian
+            Wright</span
+          >
+        </h4>
+        <h4>Headquarters:<span> Palo Alto, California, U.S.</span></h4>
+        <h4>
+          Official Site:
+          <span class="links" onclick="location='https://www.tesla.com'"
+            >www.tesla.com</span
+          >
+        </h4>
+        Tesla, Inc. (formerly Tesla Motors, Inc.), is an American electric
+        vehicle and clean energy company based in Palo Alto, California. The
+        company specializes in electric vehicle manufacturing, battery energy
+        storage from home to grid-scale and, through its acquisition of
+        SolarCity, solar panel and solar roof tile manufacturing. Tesla Motors
+        was founded in July 2003 by engineers Martin Eberhard and Marc
+        Tarpenning. The company's name is a tribute to inventor and electrical
+        engineer Nikola Tesla. Tesla Model 3 was the world's best selling EV
+        from 2018 to 2019 and had a maximum electric range of 500 km (310 miles)
+        according to the EPA. It's ahead of the competition in terms of
+        powertrain technology, infotainment technology, and semi-autonomous
+        driving features.
+      </div>
+      <a href="tesla.html">more..</a>
+    </div>
+    <script src="landing.js"></script>
+  </body>
+</html>
