@@ -347,20 +347,26 @@ header #colors #color4 {
   flex-direction: column;
   align-self: flex-start;
   justify-items: flex-start;
+  justify-content: space-between;
   margin-left: 20px;
   margin-top: 1%;
   max-width: 95%;
-  height: 100%;
-  flex: 1;
+  overflow: auto;
 }
 .pop-up a {
   position: absolute;
-  right: 20px;
-  bottom: 15px;
+  right: 20%;
+  top: 65%;
   color: var(--Second-Color);
   font-weight: bold;
   text-decoration: underline;
   font-size: large;
+}
+.pop-up .desc h3 {
+  font-size: 28px;
+}
+.pop-up .desc h4 {
+  font-size: 22px;
 }
 .pop-up .desc span {
   font-weight: lighter;
@@ -371,6 +377,20 @@ header #colors #color4 {
   text-decoration: underline;
   font-style: italic;
 }
+/* --------------------------------------------------------------Scroll-Bar - Start */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--Fourth-Color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--Third-Color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--Main-Color);
+}
+/* --------------------------------------------------------------Scroll-Bar - End */
 /* --------------------------------------------------------------Pop-up - End */
 /* --------------------------------------------------------------Footer - Start */
 footer {
