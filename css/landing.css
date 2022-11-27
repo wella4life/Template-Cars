@@ -315,7 +315,7 @@ header #colors #color4 {
   z-index: 1;
   display: none;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   animation: show;
   animation-duration: 2s;
@@ -348,7 +348,7 @@ header #colors #color4 {
   align-self: flex-start;
   justify-items: flex-start;
   margin-left: 20px;
-  margin-top: -20px;
+  margin-top: 1%;
   max-width: 95%;
 }
 .pop-up a {
