@@ -46,6 +46,9 @@ function close_toyota() {
   var c = document.getElementById("c");
   var c1 = document.getElementById("c1");
   var c2 = document.getElementById("c2");
+  var vid = document.getElementById("brand-video-t");
+  vid.pause();
+  vid.currentTime = 0;
   if ((b.style.display = "flex")) {
     b.style.display = "none";
   } else {
@@ -99,6 +102,9 @@ function close_volkswagen() {
   var c = document.getElementById("c");
   var c1 = document.getElementById("c1");
   var c2 = document.getElementById("c2");
+  var vid = document.getElementById("brand-video-w");
+  vid.pause();
+  vid.currentTime = 0;
   if ((b.style.display = "flex")) {
     b.style.display = "none";
   } else {
@@ -152,6 +158,9 @@ function close_mercedes() {
   var c = document.getElementById("c");
   var c1 = document.getElementById("c1");
   var c2 = document.getElementById("c2");
+  var vid = document.getElementById("brand-video-m");
+  vid.pause();
+  vid.currentTime = 0;
   if ((b.style.display = "flex")) {
     b.style.display = "none";
   } else {
@@ -205,6 +214,9 @@ function close_ford() {
   var c = document.getElementById("c");
   var c1 = document.getElementById("c1");
   var c2 = document.getElementById("c2");
+  var vid = document.getElementById("brand-video-f");
+  vid.pause();
+  vid.currentTime = 0;
   if ((b.style.display = "flex")) {
     b.style.display = "none";
   } else {
@@ -258,6 +270,9 @@ function close_honda() {
   var c = document.getElementById("c");
   var c1 = document.getElementById("c1");
   var c2 = document.getElementById("c2");
+  var vid = document.getElementById("brand-video-h");
+  vid.pause();
+  vid.currentTime = 0;
   if ((b.style.display = "flex")) {
     b.style.display = "none";
   } else {
@@ -311,6 +326,9 @@ function close_general_motors() {
   var c = document.getElementById("c");
   var c1 = document.getElementById("c1");
   var c2 = document.getElementById("c2");
+  var vid = document.getElementById("brand-video-gm");
+  vid.pause();
+  vid.currentTime = 0;
   if ((b.style.display = "flex")) {
     b.style.display = "none";
   } else {
@@ -364,6 +382,9 @@ function close_BMW() {
   var c = document.getElementById("c");
   var c1 = document.getElementById("c1");
   var c2 = document.getElementById("c2");
+  var vid = document.getElementById("brand-video-bmw");
+  vid.pause();
+  vid.currentTime = 0;
   if ((b.style.display = "flex")) {
     b.style.display = "none";
   } else {
@@ -417,6 +438,9 @@ function close_hyundai() {
   var c = document.getElementById("c");
   var c1 = document.getElementById("c1");
   var c2 = document.getElementById("c2");
+  var vid = document.getElementById("brand-video-hy");
+  vid.pause();
+  vid.currentTime = 0;
   if ((b.style.display = "flex")) {
     b.style.display = "none";
   } else {
@@ -470,6 +494,9 @@ function close_nissan() {
   var c = document.getElementById("c");
   var c1 = document.getElementById("c1");
   var c2 = document.getElementById("c2");
+  var vid = document.getElementById("brand-video-n");
+  vid.pause();
+  vid.currentTime = 0;
   if ((b.style.display = "flex")) {
     b.style.display = "none";
   } else {
@@ -523,6 +550,9 @@ function close_tesla() {
   var c = document.getElementById("c");
   var c1 = document.getElementById("c1");
   var c2 = document.getElementById("c2");
+  var vid = document.getElementById("brand-video-ts");
+  vid.pause();
+  vid.currentTime = 0;
   if ((b.style.display = "flex")) {
     b.style.display = "none";
   } else {

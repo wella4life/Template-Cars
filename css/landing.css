@@ -7,13 +7,6 @@
 }
 /* Variables - End */
 /* Global Rules - Start */
--webkit-box-sizing: border-box;
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 html {
   scroll-behavior: smooth;
   transition: 1.5s;
@@ -352,11 +345,13 @@ header #colors #color4 {
   margin-top: 1%;
   max-width: 95%;
   overflow: auto;
+  gap: 20px;
+  margin-bottom: 1%;
 }
 .pop-up a {
   position: absolute;
   right: 20%;
-  top: 65%;
+  top: 70%;
   color: var(--Second-Color);
   font-weight: bold;
   text-decoration: underline;
@@ -377,20 +372,6 @@ header #colors #color4 {
   text-decoration: underline;
   font-style: italic;
 }
-/* --------------------------------------------------------------Scroll-Bar - Start */
-::-webkit-scrollbar {
-  width: 4px;
-}
-::-webkit-scrollbar-track {
-  background: var(--Fourth-Color);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--Third-Color);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--Main-Color);
-}
-/* --------------------------------------------------------------Scroll-Bar - End */
 /* --------------------------------------------------------------Pop-up - End */
 /* --------------------------------------------------------------Footer - Start */
 footer {
@@ -428,3 +409,18 @@ footer .contacts i:hover {
   content: "";
   color: green;
 }
+/* --------------------------------------------------------------Footer - End */
+/* --------------------------------------------------------------Scroll-Bar - Start */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--Fourth-Color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--Third-Color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--Main-Color);
+}
+/* --------------------------------------------------------------Scroll-Bar - End */

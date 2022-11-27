@@ -1,0 +1,211 @@
+/* Variables - Start */
+:root {
+  --Main-Color: black;
+  --Second-Color: red;
+  --Third-Color: #3a3335;
+  --Fourth-Color: wheat;
+}
+/* Variables - End */
+/* Global Rules - Start */
+html {
+  scroll-behavior: smooth;
+  transition: 1.5s;
+}
+body {
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* --------------------------------------------------------------Const - Start */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: white;
+  opacity: 1;
+}
+/* --------------------------------------------------------------Const - End */
+/* --------------------------------------------------------------Gloval Rules - End */
+/* --------------------------------------------------------------Header - Start */
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--Fourth-Color);
+  z-index: 1;
+}
+header img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80px;
+}
+header a {
+  color: var(--Third-Color);
+}
+header a:first-of-type {
+  font-size: 25px;
+}
+header #colors {
+  display: flex;
+  justify-content: space-around;
+  width: 80px;
+  height: 15px;
+}
+header #colors #color1,
+header #colors #color2,
+header #colors #color3,
+header #colors #color4 {
+  border-radius: 100%;
+  background-color: #8a2be2;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+header #colors #color2 {
+  background-color: #01c4ff;
+}
+header #colors #color3 {
+  background-color: #e22b2b;
+}
+header #colors #color4 {
+  background-color: #f5deb3;
+}
+/* --------------------------------------------------------------Header - End */
+/* --------------------------------------------------------------Top Cont - Start */
+.top-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.top-cont input {
+  background-image: url("/Template-Cars/images/Search.png");
+  background-position: 11px 0px;
+  background-repeat: no-repeat;
+  background-size: 55px;
+  font-size: 16px;
+  padding: 14px 0 12px 80px;
+  border-radius: 25px;
+  border-color: var(--Fourth-Color) var(--Main-Color) var(--Second-Color)
+    var(--Third-Color);
+  margin-bottom: 12px;
+  width: 0;
+}
+.top-cont input:focus {
+  background-position: 99% 0px;
+  width: 75%;
+  transition: 2s;
+}
+.top-cont img:hover ~ input,
+.top-cont input:hover {
+  background-position: 99% 0px;
+  width: 75%;
+  transition: 2s;
+}
+/* --------------------------------------------------------------Top Cont - End */
+/* --------------------------------------------------------------Bottom Cont - Start */
+.bot-cont ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.bot-cont ul li::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 100px;
+  background-color: var(--Fourth-Color);
+  opacity: 0.5;
+  z-index: -1;
+}
+.bot-cont ul li {
+  width: 90%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: space-between;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+.bot-cont ul li img {
+  width: 80px;
+}
+.bot-cont ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bot-cont ul li h5 {
+  justify-self: center;
+}
+.bot-cont ul li p {
+  justify-self: center;
+}
+.bot-cont ul li p span {
+  margin-left: 20px;
+  font-weight: bold;
+}
+/* --------------------------------------------------------------Bottom Cont - End */
+/* --------------------------------------------------------------Footer - Start */
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Third-Color);
+  margin-top: 100px;
+}
+footer img {
+  width: 200px;
+  filter: invert();
+  margin-top: 25px;
+}
+footer p {
+  color: white;
+  margin-bottom: 50px;
+}
+footer p:hover {
+  content: "";
+  color: palevioletred;
+}
+footer .contacts {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+  filter: invert();
+}
+footer .contacts i {
+  cursor: pointer;
+}
+footer .contacts i:hover {
+  content: "";
+  color: green;
+}
+/* --------------------------------------------------------------Footer - End */
+/* --------------------------------------------------------------Scroll-Bar - Start */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--Fourth-Color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--Third-Color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--Main-Color);
+}
+/* --------------------------------------------------------------Scroll-Bar - End */
