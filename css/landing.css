@@ -350,6 +350,8 @@ header #colors #color4 {
   margin-left: 20px;
   margin-top: 1%;
   max-width: 95%;
+  height: 100%;
+  flex: 1;
 }
 .pop-up a {
   position: absolute;
