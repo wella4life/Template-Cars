@@ -125,21 +125,20 @@ header #colors #color4 {
   font-size: 16px;
   padding: 14px 0 12px 80px;
   border-radius: 25px;
-  border-color: var(--Fourth-Color) var(--Main-Color) var(--Second-Color)
-    var(--Third-Color);
+  border-color: var(--Fourth-Color) var(--Fourth-Color) var(--Fourth-Color)
+    var(--Fourth-Color);
   margin-bottom: 12px;
   width: 0;
+  transition: 2s;
 }
 .top-cont input:focus {
   background-position: 99% 0px;
   width: 75%;
-  transition: 2s;
 }
 .top-cont img:hover ~ input,
 .top-cont input:hover {
   background-position: 99% 0px;
   width: 75%;
-  transition: 2s;
 }
 /* --------------------------------------------------------------Top Cont - End */
 /* --------------------------------------------------------------Bottom Cont - Start */
@@ -157,6 +156,13 @@ header #colors #color4 {
   height: 200px;
   background-color: var(--Fourth-Color);
   opacity: 0.2;
+  transition: 1s ease-in-out;
+  z-index: -1;
+}
+.bot-cont ul li:hover::before {
+  background-color: var(--Fourth-Color);
+  filter: invert();
+  opacity: 0.8;
 }
 .bot-cont ul li {
   width: 200px;
@@ -194,6 +200,10 @@ header #colors #color4 {
   margin-bottom: 50px;
   font-weight: bold;
   font-style: italic;
+  transition: 1s ease-in-out;
+}
+.bot-cont ul li:hover a {
+  color: var(--Fourth-Color);
 }
 .bot-cont ul .volkswagen img {
   width: 55%;
