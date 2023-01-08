@@ -16,7 +16,7 @@ body {
   display: grid;
   align-items: center;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -96,72 +96,26 @@ header #colors #color4 {
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
-  -webkit-mask-image: linear-gradient(black);
-}
-#image-track > h2 {
-  margin-left: -180px;
-  margin-right: 80px;
-  color: white;
+  -webkit-mask-image: linear-gradient(
+    rgb(0 0 0 /1),
+    rgb(0 0 0 /0.8) 70%,
+    rgb(0 0 0 /0.7)
+  );
 }
 /* --------------------------------------------------------------Image-Track - End */
-/* --------------------------------------------------------------Sections - Start */
-.sections {
+/* --------------------------------------------------------------Info - Start */
+.info {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 500px;
+  background-color: var(--Fourth-Color);
+  width: 40%;
   position: relative;
+  left: 50%;
+  border-radius: 10px;
 }
-.sections h1 {
-  font-weight: 600;
-  font-family: var(--Glitch-Font);
-  text-shadow: -3px 0 var(--Fourth-Color);
-  letter-spacing: 5px;
-  margin-bottom: 50px;
-}
-.sections .slider {
-  width: 90vw;
-  display: flex;
-  align-items: flex-start;
-  gap: 5px;
-  overflow: hidden;
-  margin-left: 20px;
-  margin-right: 20px;
-  user-select: none;
-}
-.sections .slider .model {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.sections .slider .model h2 {
-  position: absolute;
-  color: white;
-  z-index: 2;
-  font-family: var(--Glitch-Font);
-}
-.sections .slider .right {
-  position: absolute;
-  bottom: -300px;
-  left: 0;
-  visibility: hidden;
-  z-index: 3;
-  width: 200px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  font-size: larger;
-  color: white;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-  transition: linear 3s;
-}
-.sections .slider .right .extras {
-  position: absolute;
-  bottom: 0;
-  left: 500px;
-}
-/* --------------------------------------------------------------Sections - End */
+/* --------------------------------------------------------------Info - End */
 /* --------------------------------------------------------------Top Cont - Start */
 .top-cont {
   display: flex;
