@@ -81,6 +81,20 @@ header #colors #color4 {
   background-color: #f5deb3;
 }
 /* --------------------------------------------------------------Header - End */
+/* --------------------------------------------------------------Slogan - Start */
+.slogan {
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin-top: 15px;
+  position: relative;
+  font-size: 25px;
+  text-shadow: -1px 1px var(--Fourth-Color);
+}
+/* --------------------------------------------------------------Slogan - End */
 /* --------------------------------------------------------------Image-Track - Start */
 #image-track {
   display: flex;
@@ -90,30 +104,123 @@ header #colors #color4 {
   top: 50%;
   transform: translate(0%, -50%);
   user-select: none;
+  margin-top: 100px;
 }
 #image-track > .image {
   width: 40vmin;
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
-  -webkit-mask-image: linear-gradient(
-    rgb(0 0 0 /1),
-    rgb(0 0 0 /0.8) 70%,
-    rgb(0 0 0 /0.7)
-  );
+  border-radius: 10px;
+  border: solid;
+  border-color: var(--Fourth-Color) var(--Fourth-Color) var(--Fourth-Color)
+    var(--Fourth-Color);
 }
 /* --------------------------------------------------------------Image-Track - End */
+/* --------------------------------------------------------------Choice - Start */
+.choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 450px;
+}
+.choice .left img,
+.choice .right img {
+  width: 450px;
+  mask-image: linear-gradient(rgb(0 0 0 /1), rgb(0 0 0 / 0.6));
+  -webkit-mask-image: linear-gradient(rgb(0 0 0 /1), rgb(0 0 0 / 0.6));
+}
+.choice .left img:hover {
+  mask-image: linear-gradient(rgb(0 0 0 /1), rgb(0 0 0 / 1));
+  -webkit-mask-image: linear-gradient(rgb(0 0 0 /1), rgb(0 0 0 / 1));
+}
+.choice .right img:hover {
+  mask-image: linear-gradient(rgb(0 0 0 /1), rgb(0 0 0 / 1));
+  -webkit-mask-image: linear-gradient(rgb(0 0 0 /1), rgb(0 0 0 / 1));
+}
+.choice .left p,
+.choice .right p {
+  text-align: center;
+  font-family: var(--Glitch-Font);
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+}
+.choice .left p i,
+.choice .right p i {
+  margin-right: 10px;
+}
+/* --------------------------------------------------------------Choice - End */
 /* --------------------------------------------------------------Info - Start */
 .info {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 500px;
-  background-color: var(--Fourth-Color);
-  width: 40%;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: white;
   position: relative;
-  left: 50%;
-  border-radius: 10px;
+  transition: 1s;
+}
+.info .model {
+  background-color: var(--Fourth-Color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  transition: 0.5s;
+  width: 90%;
+  left: 5%;
+  box-shadow: 0 0 0 0;
+  transition: 1s;
+}
+.info .model:hover {
+  box-shadow: -5px 5px 10px 0px;
+}
+.info .model img {
+  transition: 1s;
+  width: 550px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.info .model:hover img {
+  width: 650px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.info .model .right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 415px;
+  position: relative;
+}
+.info .model .right h2 {
+  margin-top: 60px;
+  color: black;
+}
+.info .model .right p {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  line-height: 24px;
+  overflow-y: hidden;
+}
+#m6 p,
+#m7 p,
+#m8 p {
+  font-size: 16px;
+}
+#m10 p {
+  font-size: 14px;
+}
+.info .model .right a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 /* --------------------------------------------------------------Info - End */
 /* --------------------------------------------------------------Top Cont - Start */
@@ -122,7 +229,7 @@ header #colors #color4 {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 35px;
 }
 .top-cont input {
   background-image: url("/Template-Cars/images/Search.png");
@@ -148,11 +255,35 @@ header #colors #color4 {
   width: 75%;
 }
 /* --------------------------------------------------------------Top Cont - End */
+/* --------------------------------------------------------------Filter - Start */
+.filter {
+  display: grid;
+  align-items: flex-start;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: var(--Fourth-Color);
+  width: 60%;
+  left: 20%;
+  border-radius: 25px;
+}
+.filter i {
+  margin-top: -35px;
+  position: absolute;
+}
+.filter .seller,
+.filter .year,
+.filter .brand,
+.filter .prices {
+  margin-left: -20px;
+}
+/* --------------------------------------------------------------Filter - End */
 /* --------------------------------------------------------------Bottom Cont - Start */
 .bot-cont ul {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
 }
 .bot-cont ul li::before {
   content: "";
@@ -160,9 +291,16 @@ header #colors #color4 {
   width: 90%;
   height: 100px;
   background-color: var(--Fourth-Color);
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: -1;
   border-radius: 20px;
+  transition: 0.2s;
+  margin-left: 50px;
+  box-shadow: 0 0 0 0;
+}
+.bot-cont ul li:hover::before {
+  box-shadow: -5px 5px 10px 0px;
+  opacity: 1;
 }
 .bot-cont ul li {
   width: 90%;
@@ -178,14 +316,23 @@ header #colors #color4 {
 }
 .bot-cont ul li img {
   width: 80px;
+  margin-left: 80px;
+  transition: 0.2s;
+}
+.bot-cont ul li:hover img {
+  width: 100px;
+  margin-left: 80px;
 }
 .bot-cont ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: bolder;
+  color: black;
 }
 .bot-cont ul li h5 {
   justify-self: center;
+  font-size: 18px;
 }
 .bot-cont ul li p {
   justify-self: center;
@@ -217,6 +364,8 @@ footer p {
 footer p:hover {
   content: "";
   color: palevioletred;
+  transition: 1s;
+  cursor: pointer;
 }
 footer .contacts {
   display: flex;
@@ -226,6 +375,7 @@ footer .contacts {
 }
 footer .contacts i {
   cursor: pointer;
+  transition: 1s;
 }
 footer .contacts i:hover {
   content: "";
@@ -233,7 +383,7 @@ footer .contacts i:hover {
 }
 /* --------------------------------------------------------------Footer - End */
 /* --------------------------------------------------------------Scroll-Bar - Start */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
@@ -244,5 +394,5 @@ footer .contacts i:hover {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--Main-Color);
-}
+} */
 /* --------------------------------------------------------------Scroll-Bar - End */

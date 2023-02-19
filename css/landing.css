@@ -33,14 +33,20 @@ ul {
   opacity: 1;
 }
 /* --------------------------------------------------------------Const - End */
-/* --------------------------------------------------------------Gloval Rules - End */
+/* --------------------------------------------------------------Global Rules - End */
+/* --------------------------------------------------------------BG - Start */
+
+/* --------------------------------------------------------------BG - End */
 /* --------------------------------------------------------------Header - Start */
 header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--Fourth-Color);
-  z-index: 1;
+  z-index: 20;
+  border-bottom: 2px solid black;
+  border-left: 1px solid black;
+  position: relative;
 }
 header img {
   width: 100px;
@@ -52,10 +58,9 @@ header a:first-of-type {
   font-size: 25px;
 }
 header #colors {
-  display: flex;
-  justify-content: space-around;
-  width: 80px;
-  height: 15px;
+  display: grid;
+  gap: 2px;
+  margin-left: 550px;
 }
 header #colors #color1,
 header #colors #color2,
@@ -63,9 +68,10 @@ header #colors #color3,
 header #colors #color4 {
   border-radius: 100%;
   background-color: #8a2be2;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
+  border: 2px solid black;
 }
 header #colors #color2 {
   background-color: #01c4ff;
@@ -81,32 +87,15 @@ header #colors #color4 {
 .landing {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
 .landing video {
-  max-width: 80%;
-}
-.landing img {
-  z-index: 1;
-  position: absolute;
-  transform: translate(0, 0);
-  animation-name: hidden;
-  animation-duration: 67s;
-  filter: invert(3);
-}
-@keyframes hidden {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  90% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    opacity: 100%;
-    visibility: visible;
-  }
+  width: 60%;
+  opacity: 0.95;
+  margin-right: 20px;
+  border: var(--Fourth-Color) 5px solid;
+  border-radius: 10px;
 }
 /* --------------------------------------------------------------Landing - End */
 /* --------------------------------------------------------------Top Cont - Start */
@@ -155,14 +144,19 @@ header #colors #color4 {
   width: 200px;
   height: 200px;
   background-color: var(--Fourth-Color);
-  opacity: 0.2;
-  transition: 1s ease-in-out;
+  opacity: 1;
+  transition: 1s;
   z-index: -1;
+  box-shadow: 0 0 0 0;
+  border-radius: 5px;
+  top: 0;
+  border: 3px solid black;
 }
 .bot-cont ul li:hover::before {
-  background-color: var(--Fourth-Color);
-  filter: invert();
-  opacity: 0.8;
+  box-shadow: -5px 5px 10px 0px;
+  width: 220px;
+  height: 220px;
+  top: -10px;
 }
 .bot-cont ul li {
   width: 200px;
@@ -189,10 +183,20 @@ header #colors #color4 {
   padding: 3px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  transition: 1s;
+}
+.bot-cont ul li:hover::after {
+  right: 5px;
+  bottom: 5px;
 }
 .bot-cont ul li img {
   margin-top: 50px;
   width: 40%;
+  transition: 1s;
+}
+.bot-cont ul li:hover img {
+  width: 60%;
+  margin-top: 40px;
 }
 .bot-cont ul li a {
   font-size: 22px;
@@ -200,19 +204,28 @@ header #colors #color4 {
   margin-bottom: 50px;
   font-weight: bold;
   font-style: italic;
-  transition: 1s ease-in-out;
+  transition: 1s;
 }
 .bot-cont ul li:hover a {
-  color: var(--Fourth-Color);
+  font-size: 26px;
 }
 .bot-cont ul .volkswagen img {
   width: 55%;
   margin-top: 45px;
 }
+.bot-cont ul .volkswagen:hover img {
+  width: 75%;
+  margin-top: 35px;
+}
 .bot-cont ul .mercedes img {
   width: 35%;
   margin-top: 35px;
   margin-bottom: -15px;
+}
+.bot-cont ul .mercedes:hover img {
+  width: 55%;
+  margin-top: 25px;
+  margin-bottom: -5px;
 }
 .bot-cont ul .ford img {
   width: 55%;
@@ -253,6 +266,7 @@ header #colors #color4 {
   background-color: var(--Fourth-Color);
   border-radius: 10px;
   padding: 20px;
+  border: 5px solid black;
 }
 .about-us-2 {
   display: flex;
@@ -265,6 +279,7 @@ header #colors #color4 {
   background-color: var(--Fourth-Color);
   border-radius: 10px;
   padding: 20px;
+  border: 5px solid black;
 }
 .about-us img {
   border-radius: 10px;
@@ -323,14 +338,6 @@ header #colors #color4 {
   animation: show;
   animation-duration: 2s;
   border-radius: 5px;
-}
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .pop-up i {
   position: absolute;
@@ -420,17 +427,3 @@ footer .contacts i:hover {
   color: green;
 }
 /* --------------------------------------------------------------Footer - End */
-/* --------------------------------------------------------------Scroll-Bar - Start */
-::-webkit-scrollbar {
-  width: 4px;
-}
-::-webkit-scrollbar-track {
-  background: var(--Fourth-Color);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--Third-Color);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--Main-Color);
-}
-/* --------------------------------------------------------------Scroll-Bar - End */
